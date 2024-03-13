@@ -34,6 +34,7 @@ class Cast
  * #### Class Movie
  * Describe main info of a Movie
  * @param String $title is the title of the movie
+ * @param String $movieGenre is the charactreristic if the Movie (dramatic, comic, western etc)
  * @param Number $yearProduction is the year in wich the Movie was produced
  * @param String $countryProduction is the country where the movie was produced
  * @param Number $duration is how long is the movi in minutes
@@ -44,6 +45,7 @@ class Cast
 class Movie
 {
     public $title;
+    public $movieGenre;
     public $yearProduction;
     public $countryProduction;
     public $duration;
@@ -54,6 +56,7 @@ class Movie
     /**
      * Constructor of the Class Movie
      * @param String $title is the title of the movie
+     * @param String $movieGenre is the charactreristic if the Movie (dramatic, comic, western etc)
      * @param Number $yearProduction is the year in wich the Movie was produced
      * @param String $countryProduction is the country where the movie was produced
      * @param Number $duration is how long is the movi in minutes
@@ -61,9 +64,10 @@ class Movie
      * @param String $producer is who produces the movie
      * @param Object $castMovie groups main figures of the cast of the movie 
      */
-    public function __construct($title, $yearProduction, $countryProduction, $duration, $sponsor, $producer, $castMovie)
+    public function __construct($title, $movieGenre, $yearProduction, $countryProduction, $duration, $sponsor, $producer, $castMovie)
     {
         $this->title = $title;
+        $this->movieGenre = $movieGenre;
         $this->yearProduction = $yearProduction;
         $this->countryProduction = $countryProduction;
         $this->duration = $duration;
@@ -103,10 +107,10 @@ class Movie
 }
 
 $castTitanic = new Cast('James Cameron', 'James Cameron', 'Russell Carpenter', 'Leonardo Di Caprio');
-$filmTitanic = new Movie('Titanic', 1977, 'USA', 194, 'Paramaut Pictures', 'Rea Sanchini', $castTitanic);
+$filmTitanic = new Movie('Titanic', 'Adventure-Dramatic', 1977, 'USA', 194, 'Paramaut Pictures', 'Rea Sanchini', $castTitanic);
 
 $castLaVitaEBella = new Cast('Roberto Benigni', 'Vincenzo Cerami', 'Tonino Delli Colli', 'Roberto Benigni');
-$filmLaVitaEBella = new Movie('La vita è bella', 1977, 'Italia', 122, 'Melampo', 'ELda Ferri', $castLaVitaEBella);
+$filmLaVitaEBella = new Movie('La vita è bella', 'Comic-Dramatic', 1977, 'Italia', 122, 'Melampo', 'ELda Ferri', $castLaVitaEBella);
 
 var_dump($castTitanic);
 var_dump($filmTitanic);
