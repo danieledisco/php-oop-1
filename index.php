@@ -2,6 +2,39 @@
 include __DIR__ . '/app/Layout/header.php';
 require_once __DIR__ . '/app/Models/Cast.php';
 require_once __DIR__ . '/app/Models/Movie.php';
+require_once __DIR__ . '/app/Data/db.php';
+
+/* Numbero of movies in db */
+$nMovies = count($movieData);
+
+/* Load data in array of object Movies */
+for ($i = 0; $i < $nMovies; $i++) {
+
+    /* First invoke the constructor of the class Cast */
+    $cast = new Cast(
+        $movieData[$i]['director'],
+        $movieData[$i]['screePlayer'],
+        $movieData[$i]['photograpyDirector'],
+        $movieData[$i]['mainActor'],
+    );
+
+    /* Generate the Movie obj in the objArray */
+    $objArray[$i] = new Movie(
+        $movieData[$i]['title'],
+        $movieData[$i]['movieGenre'],
+        $movieData[$i]['yearProduction'],
+        $movieData[$i]['countryProduction'],
+        $movieData[$i]['duration'],
+        $movieData[$i]['sponsor'],
+        $movieData[$i]['producer'],
+        $cast
+    );
+}
+
+var_dump($objArray[3]);
+
+$yearOfTitanic = $objArray[3]->getYearProduction();
+echo "The year of production of Titanic is" . $yearOfTitanic;
 
 /* $castTitanic = new Cast('James Cameron', 'James Cameron', 'Russell Carpenter', 'Leonardo Di Caprio');
 $filmTitanic = new Movie('Titanic', 'Adventure-Dramatic', 1977, 'USA', 194, 'Paramaut Pictures', 'Rea Sanchini', $castTitanic);
