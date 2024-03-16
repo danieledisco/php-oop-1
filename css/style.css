@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --oop-1-light: white;
+    --oop-1-dark: black;
+    --oop-1-body-bg: lightgray;
+    --oop-1-card-bg: rgb(10, 103, 103);
+    --oop-1-header-footer-bg: rgb(26, 39, 37);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--oop-1-body-bg);
+}
+
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+footer {
+    background-color: var(--oop-1-header-footer-bg);
+    color: var(--oop-1-light);
+    padding: 2rem;
+    text-align: center;
+}
+
+header {
+    background-color: var(--oop-1-header-footer-bg);
+    color: var(--oop-1-light);
+    padding: 2rem;
+    text-align: center;
+}

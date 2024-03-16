@@ -1,9 +1,9 @@
 <?php
-
+include __DIR__ . '/app/Layout/header.php';
 require_once __DIR__ . '/app/Models/Cast.php';
 require_once __DIR__ . '/app/Models/Movie.php';
 
-$castTitanic = new Cast('James Cameron', 'James Cameron', 'Russell Carpenter', 'Leonardo Di Caprio');
+/* $castTitanic = new Cast('James Cameron', 'James Cameron', 'Russell Carpenter', 'Leonardo Di Caprio');
 $filmTitanic = new Movie('Titanic', 'Adventure-Dramatic', 1977, 'USA', 194, 'Paramaut Pictures', 'Rea Sanchini', $castTitanic);
 
 $castLaVitaEBella = new Cast('Roberto Benigni', 'Vincenzo Cerami', 'Tonino Delli Colli', 'Roberto Benigni');
@@ -27,4 +27,24 @@ echo '<br>';
 echo '<br>';
 
 $yearOfTitanic = $filmTitanic->getYearProduction();
-echo "The year of production of Titanic is" . $yearOfTitanic;
+echo "The year of production of Titanic is" . $yearOfTitanic; */
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aspernatur vero quasi sed, quo aliquam corporis iusto tempore impedit ex dolorem libero recusandae consectetur nisi sint quam optio commodi. Non fugit id quia eaque animi cupiditate fugiat esse odit minima! Dolores modi nobis vitae aut expedita tempora quam odio aperiam nesciunt maxime recusandae eveniet dignissimos ipsa ducimus veritatis pariatur harum quos aspernatur, laudantium similique eaque, quod, repellendus omnis sequi. Quo accusantium, praesentium quae doloribus tempore eaque perferendis sunt modi dolor officiis molestias culpa commodi nemo atque beatae quisquam odio tenetur cupiditate amet saepe facilis magni. Ab asperiores dolorem aut beatae.
+        </div>
+
+    </main>
+
+    <?php include __DIR__ . '/app/Layout/footer.php'; ?>
