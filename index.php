@@ -30,38 +30,8 @@ for ($i = 0; $i < $nMovies; $i++) {
         $cast
     );
 }
-
-var_dump($objArray[3]);
-
-$yearOfTitanic = $objArray[3]->getYearProduction();
-echo "The year of production of Titanic is" . $yearOfTitanic;
-
-/* $castTitanic = new Cast('James Cameron', 'James Cameron', 'Russell Carpenter', 'Leonardo Di Caprio');
-$filmTitanic = new Movie('Titanic', 'Adventure-Dramatic', 1977, 'USA', 194, 'Paramaut Pictures', 'Rea Sanchini', $castTitanic);
-
-$castLaVitaEBella = new Cast('Roberto Benigni', 'Vincenzo Cerami', 'Tonino Delli Colli', 'Roberto Benigni');
-$filmLaVitaEBella = new Movie('La vita è bella', 'Comic-Dramatic', 1977, 'Italia', 122, 'Melampo', 'ELda Ferri', $castLaVitaEBella);
-
-var_dump($castTitanic);
-var_dump($filmTitanic);
-
-var_dump($castLaVitaEBella);
-var_dump($filmLaVitaEBella);
-
-
-$titanic_director = $filmTitanic->getDirector();
-echo "The director of Titanic is " . $titanic_director;
-echo '<br>';
-echo '<br>';
-
-$LaVitaEBella_mainActor = $filmLaVitaEBella->getMainActor();
-echo "The main actor of La vita è bella is " . $LaVitaEBella_mainActor;
-echo '<br>';
-echo '<br>';
-
-$yearOfTitanic = $filmTitanic->getYearProduction();
-echo "The year of production of Titanic is" . $yearOfTitanic; */
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,13 +41,5 @@ echo "The year of production of Titanic is" . $yearOfTitanic; */
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
-<body>
-    <main>
-        <div class="container">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aspernatur vero quasi sed, quo aliquam corporis iusto tempore impedit ex dolorem libero recusandae consectetur nisi sint quam optio commodi. Non fugit id quia eaque animi cupiditate fugiat esse odit minima! Dolores modi nobis vitae aut expedita tempora quam odio aperiam nesciunt maxime recusandae eveniet dignissimos ipsa ducimus veritatis pariatur harum quos aspernatur, laudantium similique eaque, quod, repellendus omnis sequi. Quo accusantium, praesentium quae doloribus tempore eaque perferendis sunt modi dolor officiis molestias culpa commodi nemo atque beatae quisquam odio tenetur cupiditate amet saepe facilis magni. Ab asperiores dolorem aut beatae.
-        </div>
-
-    </main>
-
-    <?php include __DIR__ . '/app/Layout/footer.php'; ?>
+<?php include __DIR__ . '/app/Layout/main.php'; ?>
+<?php include __DIR__ . '/app/Layout/footer.php'; ?>

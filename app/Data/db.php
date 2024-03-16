@@ -67,7 +67,7 @@ $movieData = [
         'mainActor' => 'Roberto Benigni'
     ],
     [
-        'title' => 'La vita è bella 1',
+        'title' => 'La vita è bella 2',
         'movieGenre' => 'Comic-Dramatic',
         'yearProduction' => 1977,
         'countryProduction' => 'Italia',
@@ -81,7 +81,7 @@ $movieData = [
     ],
 
     [
-        'title' => 'La vita è bella 1',
+        'title' => 'La vita è bella 3',
         'movieGenre' => 'Comic-Dramatic',
         'yearProduction' => 1977,
         'countryProduction' => 'Italia',
@@ -94,7 +94,7 @@ $movieData = [
         'mainActor' => 'Roberto Benigni'
     ],
     [
-        'title' => 'La vita è bella 1',
+        'title' => 'La vita è bella 4',
         'movieGenre' => 'Comic-Dramatic',
         'yearProduction' => 1977,
         'countryProduction' => 'Italia',
