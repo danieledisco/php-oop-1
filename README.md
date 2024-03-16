@@ -18,3 +18,10 @@ Possiamo ad esempio organizzare il codice
  - creando un file dedicato ai dati (tipo le array di oggetti) che potremmo chiamare db.php
  - mettendo ciascuna classe nel proprio file e magari raggruppare tutte le classi in una cartella dedicata che possiamo chiamare Models
 - organizzando il layout dividendo la struttura ed i contenuti in file e parziali dedicati.
+
+# Bonus 3
+Giochiamo con i nuovi concetti visti stasera e aggiungiamo nella classe Movie:
+
+ - una proprietá statica che richiamiamo staticamente
+ - un metodo 'normale' nel quale usiamo la proprietá statica
+ - un metodo statico che chiamiamo staticamente
