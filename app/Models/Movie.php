@@ -14,6 +14,9 @@
  */
 class Movie
 {
+    public static string $redistribution = "PENTA";
+    public static $tech = "TECNICOLOR";
+
     public function __construct(
         public string $title,
         public string $movieGenre,
@@ -34,6 +37,23 @@ class Movie
         $this->castMovie = $castMovie;
     }
 
+    /**
+     * Function endClass
+     * This is a static function
+     */
+    public static function endClass()
+    {
+        return "This is the end";
+    }
+    /**
+     * Function getTechnology
+     * The function returns the static property technology
+     * @return String (static) $technology
+     */
+    public function getTech()
+    {
+        return self::$tech;
+    }
     /**
      * function Get Director
      * This function returns the director of the movie

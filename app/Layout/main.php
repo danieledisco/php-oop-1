@@ -3,6 +3,7 @@
         <div class="container">
             <div class="row">
                 <?php for ($i = 0; $i < $nMovies; $i++) : ?>
+
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <h3>Title: <?php echo $objArray[$i]->title; ?></h3>
                         <h5>Genre: <?php echo $objArray[$i]->movieGenre; ?></h5>
@@ -18,6 +19,10 @@
                         <h5>Photograpy Director: <?php echo $objArray[$i]->castMovie->photograpyDirector; ?></h5>
                         <h5>Main Actor: <?php $mainActor = $objArray[$i]->getMainActor();
                                         echo $mainActor; ?></h5>
+                        <h6>Redistribution: <?php echo Movie::$redistribution ?></h6>
+                        <h6>Tech: <?php echo $objArray[$i]->getTech(); ?></h6>
+                        <h3> <?php echo Movie::endClass(); ?></h3>
+
                     </div>
                 <?php endfor ?>
             </div>
