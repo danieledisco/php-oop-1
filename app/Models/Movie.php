@@ -1,5 +1,6 @@
 
 <?php
+require_once "Genere.php";
 /**
  * Class Movie
  * Describe main info of a Movie
@@ -19,7 +20,7 @@ class Movie
 
     public function __construct(
         public string $title,
-        public string $movieGenre,
+        public Genere $generi,
         public int $yearProduction,
         public string $countryProduction,
         public int $duration,
@@ -28,7 +29,7 @@ class Movie
         public object $castMovie
     ) {
         $this->title = $title;
-        $this->movieGenre = $movieGenre;
+        $this->generi = $generi;
         $this->yearProduction = $yearProduction;
         $this->countryProduction = $countryProduction;
         $this->duration = $duration;

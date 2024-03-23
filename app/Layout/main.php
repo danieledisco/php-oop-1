@@ -6,7 +6,15 @@
 
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <h3>Title: <?php echo $objArray[$i]->title; ?></h3>
-                        <h5>Genre: <?php echo $objArray[$i]->movieGenre; ?></h5>
+                        <h5>Genre: <?php
+
+                                    /*   var_dump($objArray[$i]); */
+                                    echo $objArray[$i]->generi->getText();
+
+                                    /*                                   foreach ($objArray[$i]->generi->generi as $genere) {
+                                        echo $genere;
+                                    } */
+                                    ?></h5>
                         <h5>Year of production: <?php echo $objArray[$i]->yearProduction; ?></h5>
                         <h5>Country: <?php echo $objArray[$i]->countryProduction; ?></h5>
                         <h5>Duration: <?php echo $objArray[$i]->duration; ?>m</h5>

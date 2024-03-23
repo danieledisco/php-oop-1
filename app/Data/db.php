@@ -1,9 +1,15 @@
 <?php
 
+
+$genere1 = new Genere(['Avventuroso', 'Drammatico']);
+$genere2 = new Genere(['Comico', 'Drammatico']);
+
+
+
 $movieData = [
     [
         'title' => 'Titanic 1',
-        'movieGenre' => 'Adventure-Dramatic',
+        'generi' => ['Avventuroso', 'tragico'],
         'yearProduction' => 1977,
         'countryProduction' => 'USA',
         'duration' => 194,
@@ -16,7 +22,7 @@ $movieData = [
     ],
     [
         'title' => 'Titanic 2',
-        'movieGenre' => 'Adventure-Dramatic',
+        'generi' => $genere2,
         'yearProduction' => 1977,
         'countryProduction' => 'USA',
         'duration' => 194,
@@ -29,7 +35,7 @@ $movieData = [
     ],
     [
         'title' => 'Titanic 3',
-        'movieGenre' => 'Adventure-Dramatic',
+        'generi' => $genere1,
         'yearProduction' => 1977,
         'countryProduction' => 'USA',
         'duration' => 194,
@@ -39,7 +45,8 @@ $movieData = [
         'screePlayer' => 'James Cameron',
         'photograpyDirector' => 'Russell Carpenter',
         'mainActor' => 'Leonardo Di Caprio'
-    ],
+    ]
+    /*     
     [
         'title' => 'Titanic 4',
         'movieGenre' => 'Adventure-Dramatic',
@@ -106,5 +113,5 @@ $movieData = [
         'photograpyDirector' => 'Tonino Delli Colli',
         'mainActor' => 'Roberto Benigni'
     ]
-
+ */
 ];

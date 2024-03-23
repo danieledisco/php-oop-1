@@ -2,7 +2,9 @@
 include __DIR__ . '/app/Layout/header.php';
 require_once __DIR__ . '/app/Models/Cast.php';
 require_once __DIR__ . '/app/Models/Movie.php';
+require_once __DIR__ . '/app/Models/Genere.php';
 require_once __DIR__ . '/app/Data/db.php';
+
 
 /* Numbero of movies in db */
 $nMovies = count($movieData);
@@ -18,10 +20,12 @@ for ($i = 0; $i < $nMovies; $i++) {
         $movieData[$i]['mainActor'],
     );
 
+
+    $generi = new Genere(['prova', 'prova']);
     /* Generate the Movie obj in the objArray */
     $objArray[$i] = new Movie(
         $movieData[$i]['title'],
-        $movieData[$i]['movieGenre'],
+        $generi,
         $movieData[$i]['yearProduction'],
         $movieData[$i]['countryProduction'],
         $movieData[$i]['duration'],
