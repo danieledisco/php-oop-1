@@ -21,11 +21,11 @@ for ($i = 0; $i < $nMovies; $i++) {
     );
 
 
-    $generi = new Genere(['prova', 'prova']);
+    //$generi = new Genere(['prova', 'prova']);
     /* Generate the Movie obj in the objArray */
     $objArray[$i] = new Movie(
         $movieData[$i]['title'],
-        $generi,
+        $movieData[$i]['generi'],
         $movieData[$i]['yearProduction'],
         $movieData[$i]['countryProduction'],
         $movieData[$i]['duration'],

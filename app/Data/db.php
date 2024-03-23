@@ -9,7 +9,7 @@ $genere2 = new Genere(['Comico', 'Drammatico']);
 $movieData = [
     [
         'title' => 'Titanic 1',
-        'generi' => ['Avventuroso', 'tragico'],
+        'generi' => $genere1,
         'yearProduction' => 1977,
         'countryProduction' => 'USA',
         'duration' => 194,
